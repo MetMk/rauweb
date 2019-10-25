@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="header"> Metaks Mkrtchyan </h1>
+    <p class="symbol"> + </p>
+    <span class="button"> Click Me </span>
+</div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+
+    $('.button').on('click', function(){
+
+        if ($('.symbol')[0].innerHTML == ' + '){
+            $('.symbol')[0].innerHTML = ' - ';
+        } else {
+            $('.symbol')[0].innerHTML = ' + ';
+        }
+
+    });
+
+</script>
+
+<style>
+    .container {
+        background-color: aliceblue;
+        border-radius: 10px;
+        text-align: center;
+        width: 25%;
+    }
+    .header {
+        display: inline-block;
+    }
+    .symbol {
+        font-weight: bold;
+        font-size: 25px;
+        display: inline-block;
+    }
+    .button {
+        display: block;
+        background-color: #d3eaff;
+        padding: 10px;
+        text-align: center;
+        border-style:solid ;
+        border-color: #f0f8ff;
+        border-radius: 10px;
+    }
+    .button:hover {
+        background-color: #d8eeff;
+
+    }
+
+</style>
+
+</body>
+</html>
